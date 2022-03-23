@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IMC_2303.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="CadetBlue" Padding="24" CornerRadius="0">
+            <Label Text="CALCULO DE IMC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+       
+                
+                <Label Text="Insira seu nome: "/>
+                <Entry x:Name="txt_nome" />
+                   
+                <Label Text="Insira seu peso: "/>
+                <Entry x:Name="txt_peso" />
+
+                <Label Text="Insira sua altura: "/>
+                <Entry x:Name="txt_altura" />
+
+                <Button x:Name="btn" Text="Calcular IMC" Clicked="btn_Clicked"/>
+
+        <Grid ColumnDefinitions="*, *"
+          RowDefinitions="*, *, *, *, *,*,*,*" BackgroundColor="White">
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+               Text="TABELA IMC" TextColor="CadetBlue" FontSize="20" FontAttributes="Bold" HorizontalTextAlignment="Center"  />
+            <Label Text="IMC" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="CLASSIFICAÇÃO" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="menor que 18.5" Grid.Row="2" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="Abaixo do peso" Grid.Row="2" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="entre 18.5 e 24.9" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="Peso normal" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="entre 25.0 e 29.9" Grid.Row="4" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="Acima do peso" Grid.Row="4" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="entre 30.0 e 34.9" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="Obesidade grau I" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="entre 35.0 e 39.9" Grid.Row="6" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="Obesidade grau II" Grid.Row="6" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+            <Label Text="maior que 40.0" Grid.Row="7" Grid.Column="0" HorizontalTextAlignment="Center"/>
+            <Label Text="Obesidade grau III" Grid.Row="7" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+
+
+
+
+        </Grid>
+    </StackLayout>
+
+        </ContentPage>
+
+    
+
+
